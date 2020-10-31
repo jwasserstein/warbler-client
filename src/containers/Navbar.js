@@ -4,9 +4,6 @@ import {connect} from 'react-redux';
 import Logo from '../images/warbler-logo.png';
 
 class Navbar extends Component {
-	constructor(props){
-		super(props);
-	}
 	render(){
 		return (
 			<nav className='navbar navbar-expand justify-content-between'>
