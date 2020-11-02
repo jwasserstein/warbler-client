@@ -1,0 +1,11 @@
+{
+	"root": "build/",
+	"routes": {
+		"/**": "index.html"
+	},
+	"proxies": {
+		"/api": {
+			"origin": "https://safe-ocean-51120.herokuapp.com"
+		}
+	}
+}
