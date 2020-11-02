@@ -24,7 +24,7 @@ export function logout(){
 export function authUser(type, userData){
 	return dispatch => {
 		return new Promise((resolve, reject) => {
-			return apiCall('post', `https://testcontainer-sadjv2.run-us-west2.goorm.io/api/auth/${type}`, userData)
+			return apiCall('post', `/api/auth/${type}`, userData)
 				.then(({token, ...user}) => {
 					localStorage.setItem('jwtToken', token);
 					setAuthorizationHeader(token);
