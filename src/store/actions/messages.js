@@ -26,7 +26,7 @@ export const removeMessage = (userId, messageId) => {
 
 export const fetchMessages = () => {
 	return dispatch => {
-		apiCall('get', 'https://testcontainer-sadjv2.run-us-west2.goorm.io/api/messages')
+		apiCall('get', '/api/messages')
 			.then(res => dispatch(loadMessages(res)))
 			.catch(err => dispatch(addError(err.message)));
 	}

@@ -5,7 +5,7 @@
 	},
 	"proxies": {
 		"/api": {
-			"origin": "https://safe-ocean-51120.herokuapp.com"
+			"origin": "https://safe-ocean-51120.herokuapp.com/api"
 		}
 	}
 }
